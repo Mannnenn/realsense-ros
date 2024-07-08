@@ -33,10 +33,13 @@ import pathlib
 sys.path.append(str(pathlib.Path(__file__).parent.absolute()))
 import rs_launch
 
-local_parameters = [{'name': 'camera_name1', 'default': 'camera1', 'description': 'camera1 unique name'},
-                    {'name': 'camera_name2', 'default': 'camera2', 'description': 'camera2 unique name'},
-                    {'name': 'camera_namespace1', 'default': 'camera1', 'description': 'camera1 namespace'},
-                    {'name': 'camera_namespace2', 'default': 'camera2', 'description': 'camera2 namespace'},
+local_parameters = [{'name': 'camera_name1', 'default': 'right', 'description': 'camera1 unique name'},
+                    {'name': 'camera_name2', 'default': 'left', 'description': 'camera2 unique name'},
+                    {'name': 'camera_namespace1', 'default': 'infra_cam', 'description': 'camera1 namespace'},
+                    {'name': 'camera_namespace2', 'default': 'infra_cam', 'description': 'camera2 namespace'},
+                    {'name': 'serial_no1',                    'default': "_035622250951", 'description': 'choose device by serial number'},
+                    {'name': 'serial_no2',                    'default': "_035622250906", 'description': 'choose device by serial number'},
+
                     ]
 
 def set_configurable_parameters(local_params):

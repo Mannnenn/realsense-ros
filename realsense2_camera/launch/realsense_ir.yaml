@@ -1,0 +1,54 @@
+/**:
+  ros__parameters:
+    # Parameters that can be modified during runtime
+    color_fps: 90
+    enable_color: false
+    enable_depth: false
+    enable_infra1: true
+    enable_infra2: true
+    infra1_module.profile: 848x480x15
+    infra2_module.profile: 848x480x15
+    infra1_module.enable_auto_exposure: false
+    infra2_module.enable_auto_exposure: false
+    infra1_module.exposure: 3000
+    infra2_module.exposure: 3000
+    enable_fisheye1: false
+    enable_fisheye2: false
+    enable_gyro: false
+    enable_accel: false
+    enable_pose: false
+    enable_sync: false
+    tf_publish_rate: 0.0
+
+    # Parameters that cannot be changed in runtime:
+    serial_no: "035622250906"
+    usb_port_id: ""
+    device_type': ""
+    reconnect_timeout: 6.0
+    wait_for_device_timeout: -1.0
+    rosbag_filename: ""
+    initial_reset: false
+    unite_imu_method: 0
+    clip_distance: -1.0
+    publish_tf: true
+    diagnostics_period: 0.0
+
+    # Post-Processing Filters 
+    align_depth.enable: false
+    colorizer.enable: false
+    pointcloud.enable: false
+    pointcloud.stream_filter: 2
+    pointcloud.allow_no_texture_points: false
+    pointcloud.ordered_pc: false
+    pointcloud.stream_index_filter: 0
+    hdr_merge.enable: false
+    depth_module.exposure.1: 7500
+    depth_module.gain.1: 16
+    depth_module.exposure.2: 1
+    depth_module.gain.2: 16
+
+    # Other
+    json_file_path: ""
+    gyro_fps: 0
+    accel_fps: 0
+    pose_fps: 200

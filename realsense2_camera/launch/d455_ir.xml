@@ -1,0 +1,11 @@
+<launch>
+  <!-- Camera 1 Node -->
+  <node pkg="realsense2_camera" exec="realsense2_camera_node" name="left_cam" namespace="cam">
+    <param from="$(find-pkg-share realsense2_camera)/launch/realsense_ir.yaml"/>
+    <param name="camera_name" value="camera1"/>
+  </node>
+
+
+  <!-- Static Transform Publisher Node -->
+  <node pkg="tf2_ros" exec="static_transform_publisher" name="static_transform_publisher" args="0 0 0 0 0 0 camera1_link camera2_link"/>
+</launch>
