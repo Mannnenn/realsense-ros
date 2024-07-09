@@ -53,14 +53,14 @@ configurable_parameters = [{'name': 'camera_name',                  'default': '
                            {'name': 'depth_module.infra2_format',   'default': 'Y8', 'description': 'infra2 stream format'},
                            {'name': ' infra1_module.profile',       'default': '848,480,90', 'description': 'infra1 stream profile'},
                            {'name': ' infra2_module.profile',       'default': '848,480,90', 'description': 'infra1 stream profile'},
-                            {'name': 'infra_module.auto_exposure',   'default': 'false', 'description': 'enable/disable auto exposure for infra image'},
-                            {'name': 'infra_module.exposure',        'default': '3000', 'description': 'infra module manual exposure value'},
-                            {'name': 'infra1_module.auto_exposure',  'default': 'false', 'description': 'enable/disable auto exposure for infra1 image'},
-                            {'name': 'infra1_module.exposure',       'default': '3000', 'description': 'infra1 module manual exposure value'},
-                            {'name': 'infra2_module.auto_exposure',  'default': 'false', 'description': 'enable/disable auto exposure for infra2 image'},
-                            {'name': 'infra2_module.exposure',       'default': '3000', 'description': 'infra2 module manual exposure value'},
+                           {'name': 'infra_module.auto_exposure',   'default': 'false', 'description': 'enable/disable auto exposure for infra image'},
+                           {'name': 'infra_module.exposure',        'default': '3000', 'description': 'infra module manual exposure value'},
+                           {'name': 'infra1_module.auto_exposure',  'default': 'false', 'description': 'enable/disable auto exposure for infra1 image'},
+                           {'name': 'infra1_module.exposure',       'default': '3000', 'description': 'infra1 module manual exposure value'},
+                           {'name': 'infra2_module.auto_exposure',  'default': 'false', 'description': 'enable/disable auto exposure for infra2 image'},
+                           {'name': 'infra2_module.exposure',       'default': '3000', 'description': 'infra2 module manual exposure value'},
 
-
+                           {'name': 'depth_module.laser_power',     'default': '0.0', 'description': 'enable laser stream'},
 
                            {'name': 'depth_module.exposure',        'default': '3000', 'description': 'Depth module manual exposure value'},
                            {'name': 'depth_module.gain',            'default': '16', 'description': 'Depth module manual gain value'},
